@@ -1,15 +1,26 @@
 import Vue from 'vue'
-import Router from 'vue-router'
-import HelloWorld from '@/pages/HelloWorld'
+import VueRouter from 'vue-router'
+import 'iview/dist/styles/iview.css'
+import iView from 'iview'
 
-Vue.use(Router)
+Vue.use(iView)
+Vue.use(VueRouter)
 
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
-  ]
-})
+// 路由的数组
+const routes = [
+  {
+    // 访问路径
+    path: '/',
+    component: () => import('@/pages/login'),
+  },
+  {
+    // 访问路径
+    path: '/home',
+    component: () => import('@/pages/home'),
+  },
+];
+
+const router = new VueRouter({
+  routes
+});
+export default router;
