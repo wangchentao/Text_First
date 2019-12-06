@@ -5,12 +5,14 @@
       <div class="login-out">
         <Icon class="login-icon" type="ios-contact" />
         <div style="padding:5px 0 0 10px">账号：</div>
-        <Input v-model="account"></Input>
+        <Input placeholder="请输入账号" v-model="account" />
+        <Icon class="login-icon-i" type="md-close" @click="resetAccount" />
       </div>
       <div class="login-out">
         <Icon class="login-icon" type="md-key" />
         <div style="padding:5px 0 0 10px">密码：</div>
-        <Input type="password" v-model="password"></Input>
+        <Input placeholder="请输入密码" type="password" v-model="password" />
+        <Icon class="login-icon-i" type="md-close" @click="resetPassword" />
       </div>
       <div style="text-align:center">
         <Button class="login-Btn" @click="login" @keyup.enter="handleAddBook">登陆</Button>
@@ -37,6 +39,12 @@ export default {
     click() {
       this.test = true;
       console.log(this.test);
+    },
+    resetAccount() {
+      this.account = ""
+    },
+    resetPassword() {
+      this.password = ""
     },
     login() {
       if (this.account == "" || this.password == "") {
@@ -88,6 +96,7 @@ export default {
     width: 80%;
     background: rgb(82, 146, 82);
     color: white;
+    
   }
 
   .login-out {
@@ -102,6 +111,16 @@ export default {
       line-height: 30px;
       font-size: 25px;
     }
+
+    .login-icon-i {
+      border: 1px solid white;
+      height: 16px;
+      border-radius: 30px;
+      background: white;
+      color: black;
+      margin: 9px 0 0 10px;
+      cursor: pointer;
+    }
   }
 }
 </style>
@@ -109,7 +128,7 @@ export default {
 <style lang="less">
 .login-out {
   .ivu-input-wrapper {
-    width: 70%;
+    width: 65%;
 
     .ivu-input {
       background-color: #383838;

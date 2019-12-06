@@ -17,6 +17,22 @@ const routes = [
     // 访问路径
     path: '/home',
     component: () => import('@/pages/home'),
+    children: [{
+      path: '/people_message',
+      component: () => import('@/pages/people_message')
+    },{
+      path: '/my_text',
+      component: () => import('@/pages/my_text')
+    },{
+      path: '/personal_center',
+      component: () => import("@/pages/personal_center")
+    },{
+      path: '/my_canvas',
+      component: () => import("@/pages/my_canvas")
+    },{
+      path: '/manage',
+      component: () => import("@/pages/manage")
+    }]
   },
 ];
 
