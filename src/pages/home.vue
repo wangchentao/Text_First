@@ -21,6 +21,10 @@
           <Icon style="font-size: 24px; margin-right: 20px;" type="md-albums" />
           <div>自用测试</div>
         </div>
+        <div class="navigation-icon" @click="getExamin">
+          <Icon style="font-size: 24px; margin-right: 20px;" type="md-albums" />
+          <div>模拟考试</div>
+        </div>
         <div class="navigation-icon" @click="gerCanvas">
           <Icon style="font-size: 24px; margin-right: 20px;" type="ios-color-palette" />
           <div>图谱测试</div>
@@ -48,17 +52,21 @@ export default {
   },
   methods: {
     help() {
-      this.$Modal.confirm({
-        title: "帮助",
-        content:
-          "<p>如需选择类型请点击左边导航栏</p><p>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </p><p>To select the type, click the left navigation bar</p>"
-      });
+      // this.$Modal.confirm({
+      //   title: "帮助",
+      //   content:
+      //     "<p>如需选择类型请点击左边导航栏</p><p>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </p><p>To select the type, click the left navigation bar</p>"
+      // });
+      this.$router.push('/text')
     },
     getPersonal() {
       this.$router.push('/people_message')
     },
     getMyText() {
       this.$router.push('/my_text')
+    },
+    getExamin() {
+      this.$router.push('/simulation')
     },
     getPersonalCenter() {
       this.$router.push('/personal_center')
@@ -78,7 +86,7 @@ export default {
   height: 100%;
   width: 100%;
   background: #f8f8f9;
-
+  overflow: hidden;
   .header {
     width: 100%;
     height: 10%;

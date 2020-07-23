@@ -32,6 +32,18 @@ const routes = [
     },{
       path: '/manage',
       component: () => import("@/pages/manage")
+    },{
+      path: '/uniterming',
+      component: () => import("@/pages/uniterming")
+    },{
+      path: '/multipleChoice',
+      component: () => import("@/pages/multipleChoice")
+    },{
+      path: '/simulation',
+      component: () => import("@/pages/simulation")
+    },{
+      path: '/text',
+      component: () => import("@/pages/text")
     }]
   },
 ];
