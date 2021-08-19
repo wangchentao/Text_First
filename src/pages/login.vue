@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <div class="login">
-      <div class="login-header">测试登陆</div>
+      <div class="login-header">登陆</div>
       <div class="login-out">
         <Icon class="login-icon" type="ios-contact" />
         <div style="padding:5px 0 0 10px">账号：</div>
