@@ -19,19 +19,19 @@
         </div>
         <div class="navigation-icon" @click="getMyText">
           <Icon style="font-size: 24px; margin-right: 20px;" type="md-albums" />
-          <div>自用测试</div>
+          <div>客户</div>
         </div>
         <div class="navigation-icon" @click="getExamin">
           <Icon style="font-size: 24px; margin-right: 20px;" type="md-albums" />
-          <div>模拟考试</div>
+          <div>模拟</div>
         </div>
         <div class="navigation-icon" @click="gerCanvas">
           <Icon style="font-size: 24px; margin-right: 20px;" type="ios-color-palette" />
-          <div>图谱测试</div>
+          <div>系统界面</div>
         </div>
         <div class="navigation-icon" @click="getManage">
           <Icon style="font-size: 24px; margin-right: 20px;" type="ios-cube" />
-          <div>管理</div>
+          <div>合同</div>
         </div>
       </div>
       <div class="content">
@@ -47,7 +47,7 @@ export default {
   components: {},
   data() {
     return {
-      modal: false
+      modal: false,
     };
   },
   methods: {

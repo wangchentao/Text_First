@@ -2,7 +2,11 @@
   <div class="all">
     <div class="header">个人资料</div>
     <Divider />
-    <div></div>
+    <div>
+      <div>
+        
+      </div>
+    </div>
   </div>
 </template>
 
