@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import 'iview/dist/styles/iview.css'
 import iView from 'iview'
 
+
 Vue.use(iView)
 Vue.use(VueRouter)
 
@@ -44,9 +45,6 @@ const routes = [
     },{
       path: '/text',
       component: () => import("@/pages/text")
-    },{
-      path: '/echartsText',
-      component: () => import("@/pages/echartsText")
     }]
   },
 ];

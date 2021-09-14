@@ -27,15 +27,11 @@
         </div>
         <div class="navigation-icon" @click="gerCanvas">
           <Icon style="font-size: 24px; margin-right: 20px;" type="ios-color-palette" />
-          <div>系统界面</div>
+          <div>测试</div>
         </div>
         <div class="navigation-icon" @click="getManage">
           <Icon style="font-size: 24px; margin-right: 20px;" type="ios-cube" />
           <div>合同</div>
-        </div>
-        <div class="navigation-icon" @click="getText">
-          <Icon style="font-size: 24px; margin-right: 20px;" type="ios-cube" />
-          <div>测试</div>
         </div>
       </div>
       <div class="content">
@@ -80,9 +76,6 @@ export default {
     },
     getManage() {
       this.$router.push('/manage')
-    },
-    getText() {
-      this.$router.push('/echartsText')
     }
   }
 };
