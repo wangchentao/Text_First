@@ -44,6 +44,9 @@ const routes = [
     },{
       path: '/text',
       component: () => import("@/pages/text")
+    },{
+      path: '/echartsText',
+      component: () => import("@/pages/echartsText")
     }]
   },
 ];
