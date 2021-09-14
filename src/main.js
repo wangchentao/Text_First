@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router/index'
 import * as echarts from 'echarts'
+import 'echarts-gl'
 
 Vue.prototype.$echarts = echarts
 Vue.config.productionTip = false
