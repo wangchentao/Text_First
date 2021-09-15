@@ -33,6 +33,10 @@
           <Icon style="font-size: 24px; margin-right: 20px;" type="ios-cube" />
           <div>合同</div>
         </div>
+        <div class="navigation-icon" @click="getTemplate">
+          <Icon style="font-size: 24px; margin-right: 20px;" type="ios-cube" />
+          <div>模板</div>
+        </div>
       </div>
       <div class="content">
         <router-view/>
@@ -76,6 +80,9 @@ export default {
     },
     getManage() {
       this.$router.push('/manage')
+    },
+    getTemplate() {
+      this.$router.push('/template')
     }
   }
 };
